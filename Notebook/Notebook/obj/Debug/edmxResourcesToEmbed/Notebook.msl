@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="Notebook" />
+  <Alias Key="Target" Value="Notebook.Store" />
+  <EntityContainerMapping CdmEntityContainer="NotebookContainer" StorageEntityContainer="NotebookStoreContainer">
+    <EntitySetMapping Name="Notebook">
+      <EntityTypeMapping TypeName="Notebook.Contact">
+        <MappingFragment StoreEntitySet="Notebook">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
